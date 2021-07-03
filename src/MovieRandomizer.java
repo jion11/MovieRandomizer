@@ -28,7 +28,7 @@ public class MovieRandomizer {
                     break;
                 } else
                 {
-                    if (movieName.length() > 0)
+                    if (movieName.length() > 0 && !mov.contains(movieName)) //Won't add null or a movie if it's already in the list
                     {
                         mov.add(movieName);
                     }
