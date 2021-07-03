@@ -3,25 +3,81 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Random;
 import java.time.LocalDate;
-
+import javax.mail.*;
+import javax.mail.internet.*;
 
 public class MovieRandomizer {
     //initializing my Random object and getting a reference to my txt
-    public static File movies = new File("D:\\CodingProjects\\Java\\Java Projects\\Movie Randomizer\\MovieRandomizer\\MoviesToWatch.txt");
-    public static File watchListMovies = new File("D:\\CodingProjects\\Java\\Java Projects\\Movie Randomizer\\MovieRandomizer\\MoviesWatched.txt");
-    public static Random rand = new Random();
-    public static Scanner listReader;
-    public static Scanner listReaderWatched;
+    private static File movies = new File("D:\\CodingProjects\\Java\\Java Projects\\Movie Randomizer\\MovieRandomizer\\MoviesToWatch.txt");
+    private static File watchListMovies = new File("D:\\CodingProjects\\Java\\Java Projects\\Movie Randomizer\\MovieRandomizer\\MoviesWatched.txt");
+    private static Random rand = new Random();
+    private static BufferedReader listReaderWatched;
+    private static BufferedReader listReader;
+    private static String randomMovie;
 
 
-    public static void fillList(Scanner reader, ArrayList<String> mov)
+    public static void fillList(BufferedReader reader, ArrayList<String> mov)
     {
         //Adding strings to the Array List
-        while (reader.hasNextLine()) {  //looks though each line in the movie txt until null
-            String movieName = reader.nextLine();
-            mov.add(movieName);
+        try {
+            String movieName = reader.readLine();
+            while (movieName != null) {  //looks though each line in the movie txt until null
+                movieName = reader.readLine();
+                if (movieName == null)
+                {
+                    break;
+                } else
+                {
+                    if (movieName.length() > 0)
+                    {
+                        mov.add(movieName);
+                    }
+                }
+
+            }
+            reader.close();
+        } catch (IOException ioe) {
+            System.out.println("Could not read file");
         }
-        reader.close();
+    }
+
+    public static void sendEmail(String ran)
+    {
+        String host = "smtp.gmail.com";
+        final String user = "cameron.dandyO33@gmail.com";
+        final String password = "********";
+
+        String to ="cameron.ohree@gmail.com";
+
+        java.util.Properties props = new java.util.Properties();
+        props.put("mail.smtp.starttls.enable", "true");
+        props.put("mail.smtp.host", host);
+        props.put("mail.smtp.user", user);
+        props.put("mail.smtp.password", password);
+        props.put("mail.smtp.port", "587");
+        props.put("mail.smtp.auth", "true");
+
+
+        Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
+                    protected PasswordAuthentication getPasswordAuthentication() {
+                        return new PasswordAuthentication(user,password);
+                    }
+                });
+
+        try {
+            MimeMessage message = new MimeMessage(session);
+            message.setFrom(new InternetAddress(user));
+            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
+            message.setSubject("Here is your random movie!");
+            message.setText("The movie you will be watching is: \n" + ran + "\nThis was picked at " + LocalDate.now() );
+
+            Transport.send(message);
+            System.out.println("message sent!");
+        }
+        catch (MessagingException mex)
+        {
+            System.out.println("Error: unable to send message....");
+        }
     }
 
     public static void writeTo(ArrayList<String> stringList, String r, FileWriter wri) //Will write string r to file with filewriter.
@@ -44,21 +100,30 @@ public class MovieRandomizer {
 
     public static void main(String[] args) throws java.io.IOException
     {
-        listReader = new Scanner(movies); //Will parse through my movie txt for their primitives
+        listReader = new BufferedReader(new FileReader(movies)); //Will parse through my movie txt for their primitives
         ArrayList<String> movieList = new ArrayList<>(); //What will hold the string from movie txt
-        listReaderWatched = new Scanner(watchListMovies);
+        listReaderWatched = new BufferedReader(new FileReader(watchListMovies));
         ArrayList<String> watchedMovieList = new ArrayList<>();
 
         fillList(listReader, movieList);
         fillList(listReaderWatched, watchedMovieList);
-
-        String randomMovie = movieList.get(rand.nextInt(movieList.size()));
         FileWriter movieWatched = new FileWriter("D:\\CodingProjects\\Java\\Java Projects\\Movie Randomizer\\MovieRandomizer\\MoviesWatched.txt",true);
 
-        System.out.println(movieList);
-        System.out.println(randomMovie + " on: " + LocalDate.now());
-        writeTo(watchedMovieList, randomMovie, movieWatched);
-        System.out.println(watchedMovieList);
+        if (movieList.size() > 0)
+        {
+            randomMovie = movieList.get(rand.nextInt(movieList.size()));
+            System.out.println(movieList);
+            System.out.println(randomMovie + " on: " + LocalDate.now());
+            writeTo(watchedMovieList, randomMovie, movieWatched);
+            System.out.println(watchedMovieList);
+        } else {
+            System.out.println("Add movies to MoviesToWatch.txt first you dingus");
+        }
+
+
+
+
+
 
     }
 
