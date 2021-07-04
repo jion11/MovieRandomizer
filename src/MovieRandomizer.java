@@ -5,6 +5,7 @@ import java.util.Random;
 import java.time.LocalDate;
 import javax.mail.*;
 import javax.mail.internet.*;
+import org.springframework.web.bind.annotation.RestController;
 
 public class MovieRandomizer {
     //initializing my Random object and getting a reference to my txt
@@ -77,6 +78,7 @@ public class MovieRandomizer {
         catch (MessagingException mex)
         {
             System.out.println("Error: unable to send message....");
+            mex.printStackTrace();
         }
     }
 
@@ -119,9 +121,6 @@ public class MovieRandomizer {
         } else {
             System.out.println("Add movies to MoviesToWatch.txt first you dingus");
         }
-
-
-
 
 
 
