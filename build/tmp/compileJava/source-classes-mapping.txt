@@ -1,3 +1,5 @@
-MovieRandomizer.java
- MovieRandomizer
- MovieRandomizer$1
+com/Movie/Randomizer/MovieRandomizer.java
+ com.Movie.Randomizer.MovieRandomizer
+ com.Movie.Randomizer.MovieRandomizer$1
+com/Movie/Randomizer/MovieRandomizerController.java
+ com.Movie.Randomizer.MovieRandomizerController
