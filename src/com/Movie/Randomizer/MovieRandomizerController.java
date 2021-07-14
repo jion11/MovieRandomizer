@@ -1,18 +1,49 @@
 package com.Movie.Randomizer;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import java.util.List;
+
+import java.io.IOException;
+import java.util.ArrayList;
 
 @RestController
-@RequestMapping
+@RequestMapping(path = "/api")
 public class MovieRandomizerController {
 
-    @GetMapping
-    public String getRandomMovie() {
+    private final MovieRandomizerService movieRandomizerService;
 
-        return MovieRandomizer.randomMovieText();
+    @Autowired
+    public MovieRandomizerController(MovieRandomizerService movieRandomizerService) {
+        this.movieRandomizerService = movieRandomizerService;
     }
+
+    @GetMapping(path = "/movie/random")
+
+    public String getRandomMovie() throws IOException {
+
+        return movieRandomizerService.getRandomMovie() + "<br>"
+                + movieRandomizerService.getDirector() + "<br>"
+                + movieRandomizerService.getYear() + "<br>"
+                + movieRandomizerService.getDescription() + "<br>"
+                + movieRandomizerService.getUrl();
+
+    }
+
+    @GetMapping("/movie")
+
+    public ArrayList<String> getMovieList() {
+
+        return movieRandomizerService.getMovies();
+    }
+
+    @GetMapping("/movie/watched")
+
+    public ArrayList<String> getMovieWatchedList() {
+        return movieRandomizerService.getMoviesWatched();
+    }
+
+
 
 }
