@@ -15,9 +15,6 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Random;
 import java.time.LocalDate;
-import javax.mail.*;
-import javax.mail.internet.*;
-import javax.xml.transform.Result;
 
 @SpringBootApplication
 
@@ -186,47 +183,6 @@ public class MovieRandomizer {
         return newName.toLowerCase();
     }
 
-
-
-    public static void sendEmail(String ran)
-    {
-        String host = "smtp.gmail.com";
-        final String user = "cameron.dandyO33@gmail.com";
-        final String password = "********";
-
-        String to ="cameron.ohree@gmail.com";
-
-        java.util.Properties props = new java.util.Properties();
-        props.put("mail.smtp.starttls.enable", "true");
-        props.put("mail.smtp.host", host);
-        props.put("mail.smtp.user", user);
-        props.put("mail.smtp.password", password);
-        props.put("mail.smtp.port", "587");
-        props.put("mail.smtp.auth", "true");
-
-
-        Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
-                    protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication(user,password);
-                    }
-                });
-
-        try {
-            MimeMessage message = new MimeMessage(session);
-            message.setFrom(new InternetAddress(user));
-            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-            message.setSubject("Here is your random movie!");
-            message.setText("The movie you will be watching is: \n" + ran + "\nThis was picked at " + LocalDate.now() );
-
-            Transport.send(message);
-            System.out.println("message sent!");
-        }
-        catch (MessagingException mex)
-        {
-            System.out.println("Error: unable to send message....");
-            mex.printStackTrace();
-        }
-    }
 
     public static void writeTo(ArrayList<String> stringList, String r, FileWriter wri) //Will write string r to file with filewriter.
     {
