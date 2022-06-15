@@ -45,6 +45,12 @@ public class MovieRandomizerController {
         return movieRandomizerService.getMoviesWatched();
     }
 
+    @GetMapping("/")
+
+    public String helloWorld() {
+
+        return "Hello World";
+    }
 
 
 }
