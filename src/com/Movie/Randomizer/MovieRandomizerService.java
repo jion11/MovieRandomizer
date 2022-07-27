@@ -12,7 +12,7 @@ public class MovieRandomizerService {
 
     public String getRandomMovie() {
 
-        randMovie = MovieRandomizer.randomMovieText();
+        randMovie = MovieRandomizer.randomizeMovie();
         return randMovie;
     }
 
@@ -31,3 +31,4 @@ public class MovieRandomizerService {
     public String getUrl() {return "Letterboxd link: " + MovieRandomizer.urlMovie();}
 
 }
+

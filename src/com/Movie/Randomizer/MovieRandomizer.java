@@ -23,7 +23,7 @@ public class MovieRandomizer {
     //initializing my Random object and getting a reference to my txt
     private static File movies = new File("D:\\CodingProjects\\Java\\Java Projects\\Movie Randomizer\\MovieRandomizer\\MoviesToWatch.txt");
     private static File watchListMovies = new File("D:\\CodingProjects\\Java\\Java Projects\\Movie Randomizer\\MovieRandomizer\\MoviesWatched.txt");
-    private static Random rand = new Random();
+    //private static Random rand = new Random();
     private static BufferedReader listReaderWatched;
     private static BufferedReader listReader;
     private static String randomMovie;
@@ -205,22 +205,20 @@ public class MovieRandomizer {
 
     public static void main(String[] args)
     {
+        SpringApplication.run(MovieRandomizer.class, args);
+    }
+
+    public static String randomizeMovie(){
         ArrayList<String> movieList = GetMovies();
         if (movieList.size() > 0)
         {
-            randomMovie = movieList.get(rand.nextInt(movieList.size()));
-            System.out.println(movieList);
-            System.out.println(randomMovie + " on: " + LocalDate.now());
+            randomMovie = movieList.get((int) (Math.random() * movieList.size()));
+            //System.out.println(movieList);
+            //System.out.println(randomMovie + " on: " + LocalDate.now());
             //InsertDate();
         } else {
             System.out.println("Add movies to the database first you dingus");
         }
-
-        SpringApplication.run(MovieRandomizer.class, args);
-
-    }
-
-    public static String randomMovieText(){
         return randomMovie;
     }
 

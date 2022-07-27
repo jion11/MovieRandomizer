@@ -18,6 +18,7 @@
       <destination value="FILE" />
       <format value="EXCEL" />
       <charset value="windows-1252" />
+      <charset value="windows-1252" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -63,12 +64,15 @@
     <last-used-operator value="EQUAL" />
     <filters />
   </component>
+  <component name="DBNavigator.Project.ParserDiagnosticsManager">
+    <diagnostics-history />
+  </component>
   <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
     <recently-used-interfaces />
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="3e1ba9c5-8402-4729-bfb3-37fed77697f5" active="true">
+      <connection id="3e1ba9c5-8402-4729-bfb3-37fed77697f5" active="true" signed="true">
         <database>
           <name value="MovieConnection" />
           <description value="" />
@@ -122,7 +126,7 @@
           <alternative-statement-delimiter value="" />
         </details>
         <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
-          <object-type-filter use-master-settings="true">
+          <object-type-filter>
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />
             <object-type name="ROLE" enabled="true" />
@@ -152,7 +156,7 @@
           <object-name-filters />
         </object-filters>
       </connection>
-      <connection id="5a05157b-7cf1-49f8-b791-716b3fcef09a" active="true">
+      <connection id="5a05157b-7cf1-49f8-b791-716b3fcef09a" active="true" signed="true">
         <database>
           <name value="Connection 1" />
           <description value="" />
@@ -206,7 +210,7 @@
           <alternative-statement-delimiter value="" />
         </details>
         <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
-          <object-type-filter use-master-settings="true">
+          <object-type-filter>
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />
             <object-type name="ROLE" enabled="true" />

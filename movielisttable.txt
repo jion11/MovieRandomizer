@@ -1,0 +1,65 @@
+2020-03-20	Chungking Express	1994	https://boxd.it/1UDa	\N	6
+2020-09-16	Terrorizers	1986	https://boxd.it/2IRG	\N	7
+2020-10-20	Tokyo Story	1953	https://boxd.it/1HuY	\N	8
+2020-10-20	The Man Who Stole the Sun	1979	https://boxd.it/igK	\N	9
+2020-10-20	Revanche	2008	https://boxd.it/1MdS	\N	10
+2020-10-20	The Haunting	1963	https://boxd.it/1T7M	\N	11
+2020-10-20	Kwaidan	1964	https://boxd.it/1kbY	\N	12
+2020-10-20	Tokyo Fist	1995	https://boxd.it/Z2m	\N	13
+2020-10-20	The Housemaid	1960	https://boxd.it/WJs	\N	14
+2020-10-20	California Split	1974	https://boxd.it/1hRs	\N	15
+2020-10-20	Winter Sleep	2014	https://boxd.it/7Ua0	\N	16
+2020-10-20	Battles Without Honor and Humanity	1973	https://boxd.it/1e0q	\N	17
+2020-10-20	Viy	1967	https://boxd.it/nd2	\N	18
+2020-11-19	Once Upon a Time in China	1991	https://boxd.it/1VOy	\N	19
+2020-11-29	Black Jack	1979	https://boxd.it/2hTU	\N	20
+2020-12-05	The Handmaiden	2016	https://boxd.it/948A	\N	21
+2021-03-26	Throne of Blood	1957	https://boxd.it/251w	\N	22
+2021-03-26	The Night Comes for Us	2018	https://boxd.it/g2lc	\N	23
+2021-03-26	Secret Sunshine	2007	https://boxd.it/27CY	\N	24
+2021-03-26	Fallen Angels	1995	https://boxd.it/1UkW	\N	25
+2021-03-26	Anatomy of a Murder	1959	https://boxd.it/2baa	\N	26
+2021-03-26	Victoria	2015	https://boxd.it/amSe	\N	27
+2021-03-28	Shoplifters	2018	https://boxd.it/ifY6	\N	28
+2021-03-28	Landscape in the Mist	1988	https://boxd.it/JRy	\N	29
+2021-03-28	BUãƒ»SU	1987	https://boxd.it/68Ea	\N	30
+2021-03-30	Leviathan	2014	https://boxd.it/7Ub8	\N	31
+2021-03-30	Poetry	2010	https://boxd.it/JAs	\N	32
+2021-03-31	Collective	2019	https://boxd.it/mRVi	\N	33
+2021-03-31	Driveways	2019	https://boxd.it/kRBy	\N	34
+2021-03-31	First Cow	2019	https://boxd.it/krga	\N	35
+2021-03-31	A Bittersweet Life	2005	https://boxd.it/1U4Y	\N	36
+2021-04-01	Love and Monsters	2020	https://boxd.it/lJ6E	\N	37
+2021-04-03	Boy & the World	2013	https://boxd.it/6CM4	\N	38
+2021-04-16	Only Yesterday	1991	https://boxd.it/1MR4	\N	39
+2021-04-16	The Return	2003	https://boxd.it/1UpM	\N	40
+2021-04-16	Police Story	1985	https://boxd.it/1Zhe	\N	41
+2021-04-16	Shiva Baby	2020	https://boxd.it/oIv0	\N	42
+2021-04-18	Flowers of Shanghai	1998	https://boxd.it/Omq	\N	43
+2021-04-19	Dirty Ho	1979	https://boxd.it/uSm	\N	44
+2021-04-19	The One-Armed Swordsman	1967	https://boxd.it/uSQ	\N	45
+2021-04-25	The Spine of Night	2021	https://boxd.it/tVjm	\N	46
+2021-05-01	Limbo	2020	https://boxd.it/khaw	\N	47
+2021-05-02	The Third Man	1949	https://boxd.it/294E	\N	48
+2021-05-02	The Bad Sleep Well	1960	https://boxd.it/1iLA	\N	49
+2021-05-14	Beasts Clawing at Straws	2020	https://boxd.it/kZ9i	\N	50
+2021-05-14	Asura: The City of Madness	2016	https://boxd.it/enJU	\N	51
+2021-05-15	Destruction Babies	2016	https://boxd.it/dj8e	\N	52
+2021-05-15	Fireworks	1997	https://boxd.it/22mQ	\N	53
+2021-05-16	The Kirishima Thing	2012	https://boxd.it/5nry	\N	54
+2021-06-12	Top Secret!	1984	https://boxd.it/1ZSE	\N	55
+2021-06-12	North by Northwest	1959	https://boxd.it/2aRM	\N	56
+2021-06-12	Lust, Caution	2007	https://boxd.it/244k	\N	57
+2021-06-14	Munich	2005	https://boxd.it/2a0e	\N	58
+2021-06-21	Luca	2021	https://boxd.it/ipjC	\N	59
+2021-07-05	Branded to Kill	1967	https://boxd.it/1HSQ	\N	60
+2021-07-05	Tokyo Drifter	1966	https://boxd.it/OTY	\N	61
+2021-07-05	Glasses	2007	https://boxd.it/1vnw	\N	62
+2021-07-05	A Man Vanishes	1967	https://boxd.it/322S	\N	63
+2021-07-05	Tampopo	1985	https://boxd.it/1SZe	\N	64
+2021-07-05	Suzaku	1997	https://boxd.it/19yC	\N	65
+2019-07-21	Rushmore	1998	https://boxd.it/1Luy	2019-07-21	1
+2020-01-12	RockNRolla	2008	https://boxd.it/1PmI	\N	2
+2021-02-10	A Brighter Summer Day	1991	https://boxd.it/1Luy	\N	3
+2021-04-21	The Graduate	1967	https://boxd.it/1Luy	\N	4
+2020-04-20	The Kid Detective	2020	https://boxd.it/r0qm	\N	5
