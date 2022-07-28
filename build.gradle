@@ -17,6 +17,7 @@ repositories {
     mavenCentral()
 }
 
+apply plugin: 'java'
 jar {
     manifest {
         attributes(
