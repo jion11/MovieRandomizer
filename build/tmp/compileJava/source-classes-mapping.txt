@@ -1,6 +1,8 @@
 com/Movie/Randomizer/MovieRandomizer.java
  com.Movie.Randomizer.MovieRandomizer
-com/Movie/Randomizer/MovieRandomizerController.java
- com.Movie.Randomizer.MovieRandomizerController
 com/Movie/Randomizer/MovieRandomizerService.java
  com.Movie.Randomizer.MovieRandomizerService
+Model/Movie.java
+ Model.Movie
+com/Movie/Randomizer/MovieRandomizerController.java
+ com.Movie.Randomizer.MovieRandomizerController
